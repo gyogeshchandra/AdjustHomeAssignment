@@ -19,6 +19,7 @@ This api exposes the sample dataset through a single generic HTTP API endpoint u
 3. This API requires Postgres, so
     vi settings.py
     replace necessary information mentioned in this directory:
+    ```
         DATABASES = {
             'default': {
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -29,6 +30,7 @@ This api exposes the sample dataset through a single generic HTTP API endpoint u
                 'PORT': "5432",
             }
         }
+     ```   
 
 4. Run migrations. This will insert sample dataset into database. 
     ```
